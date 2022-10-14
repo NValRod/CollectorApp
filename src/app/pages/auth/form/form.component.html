@@ -1,0 +1,22 @@
+<div class="formCnt">
+    <div class="logIn-div"> 
+        <img src="../../../assets/Img/Main-Logo.jpeg" alt="Logo" class="logo">
+        <h1>{{options.label}}</h1>
+        <form (ngSubmit)="onSubmit()" [formGroup]="authForm">
+            <input type="Email" placeholder="Email" class="user" formControlName="email">
+            <input type="password" placeholder="Password" class="password" formControlName="password">
+            <button>{{options.label}}</button>
+            <div class="links">
+                <ng-container *ngIf="options.id === SignIn; else showSignTemplate">
+                    <a [routerLink]="['/sign-up']">Create a new acconunt</a>
+                </ng-container>
+            </div>
+            <ng-template #showSignTemplate>
+                <div class="links">
+                    <a>Already have an account? </a><a [routerLink]="['/sign-in']" class="signInText">Sign In</a>
+                </div>
+            </ng-template>
+        </form>
+    </div>
+
+</div>
