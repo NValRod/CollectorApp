@@ -1,7 +1,8 @@
 <main>  
     <div class="logIn-div">
         <!-- <input type="search" placeholder="Search Id / Cedula" class="inputSearch"> -->
-        <div class="serchCnt">
+        <div>
+            <h1 class="title">Buscador de clientes</h1>
               <mat-form-field appearance="outline">
                 <mat-label>Buscar Id / Cedula</mat-label>
                 <input matInput placeholder="Cedula" type="search" class="inputSearch">
@@ -29,7 +30,7 @@
             <!-- Name Column -->
             <ng-container matColumnDef="name">
               <th mat-header-cell *matHeaderCellDef> Nombre </th>
-              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+              <td mat-cell *matCellDef="let element"> {{element.name | uppercase}} </td>
             </ng-container>
           
             <!-- Weight Column -->
@@ -52,7 +53,7 @@
           
             <!-- Symbol Column -->
             <ng-container matColumnDef="lastDatePay">
-              <th mat-header-cell *matHeaderCellDef> Fecha ultimo pago</th>
+              <th mat-header-cell *matHeaderCellDef> F. ultimo pago</th>
               <td mat-cell *matCellDef="let element"> {{element.lastDatePay}} </td>
             </ng-container>
             lastDatePay
