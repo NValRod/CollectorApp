@@ -1,0 +1,66 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.logIn-div{
+    width: 95%;
+    height: 95vh;
+    padding: 60px 35px 35px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1em;
+    border-radius: 40px;
+    background: #ecf0f3;
+    box-shadow:  20px 20px 60px #a1acb4,
+                 -20px -20px 60px #ffffff;
+
+}
+
+mat-form-field{
+    font-size: 1em;
+    width: 25em;
+}
+
+
+table {
+    width: 70em;
+    margin-top: 2em;
+}
+
+.serchCnt{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnLogOut{
+    margin-top: 1em;
+    margin-left: 40em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+    height: 3em;
+    width: 10em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    background-color: #24cfaa;
+    transition: .5s;
+    font-size: .9em;
+    font-weight: 700;
+    text-transform: capitalize;
+    box-shadow: 3px 3px 8px #b1b1b1,
+                -3px -3px 8px #ffffff ;
+}
+
+.btnLogOut:hover{
+    background: #2fdbb6;
+}
+
+.btnLogOut:active{
+    background-color:#1da88a;
+}
