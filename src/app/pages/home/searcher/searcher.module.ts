@@ -1,24 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './home.component';
+import { SearcherComponent } from './searcher.component';
 import { RouterModule } from '@angular/router';
-import { FormModule } from '../auth/form/form.module';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
+import { FormModule } from '../../auth/form/form.module';
+import { SearcherRoutingModule } from './sarcher-routing.module';
 
 
- 
 
 @NgModule({
   declarations: [
-    HomeComponent,
+    SearcherComponent
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule,
+    SearcherRoutingModule, 
     RouterModule,
     FormModule,
     MatFormFieldModule,
@@ -26,4 +24,4 @@ import { MatTableModule } from '@angular/material/table';
     MatTableModule
   ]
 })
-export class HomeModule { }
+export class SearcherModule { }

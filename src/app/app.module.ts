@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarModule } from './shared/navbar/navbar.module';
+import { SearcherModule } from './pages/home/searcher/searcher.module';
+
 
 
 
@@ -15,7 +18,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NavbarModule,
+    SearcherModule
   ],
   providers: [],
   bootstrap: [AppComponent]

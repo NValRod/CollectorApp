@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../auth/services/auth.services';
 
 
 @Component({
@@ -10,5 +9,4 @@ import { AuthService } from '../auth/services/auth.services';
 export class HomeComponent  {
 
   constructor() { }
-
 }
