@@ -4,6 +4,7 @@ nav{
     gap: 2em;
     padding: 1.5em;
     margin-left: .5em;
+    top: 0;
 }
 
 nav button{

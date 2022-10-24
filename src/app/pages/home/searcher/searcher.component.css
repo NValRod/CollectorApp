@@ -3,9 +3,9 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
-.logIn-div{
+.mainCnt{
     width: 96%;
     height: 85vh;
     padding: 3em;
@@ -28,11 +28,17 @@ mat-form-field{
     width: 25em;
 }
 
+.tableCtn{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
 table {
-    width: 60em;
+    width: 76em;
     margin-top: 2em;
+    border-radius: 10px !important;
     padding: 1em;
-    background: #eef0f2;
+    background: #f8f8f8;
     box-shadow:  9px 9px 18px #e3e6e9,
                  -9px -9px 18px #f5fafd;
     

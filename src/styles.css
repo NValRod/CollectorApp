@@ -4,7 +4,7 @@
     --darkGray:#555;
     --softGray:#cbced1;
     --white:#ffffff;
-    --waterGreen:#24cfaa;
+    --waterGreen:#25c19f;
 }
 *{
     box-sizing: border-box;
@@ -27,7 +27,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.logIn-div{
+.mainCnt{
     width: 350px;
     height: 600px;
     padding: 60px 35px 35px 35px;
@@ -41,7 +41,7 @@ body{
     margin-top: -1em;
 }
 
-.logIn-div h1{
+.mainCnt h1{
     font-size: 1.5em;
     margin-top: 1.3em;
 }
