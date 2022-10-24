@@ -1,0 +1,56 @@
+nav{
+    display: flex;
+    position: absolute;
+    gap: 2em;
+    padding: 1.5em;
+    margin-left: .5em;
+}
+
+nav button{
+    width: 10em;
+    height: 2.8em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    transition: .5s;
+    font-size: .9em;
+}
+
+.btnNav{
+    color: var(--darkGray);
+    font-weight: 600;
+    background-color: var(--softWhite);
+    box-shadow:  5px 5px 15px var(--softGray),
+                -5px -5px 15px var(--white);
+}
+
+.btnNav:hover{
+    background: #2fdbb6;
+    color: var(--white);
+}
+
+.btnNav:active{
+    background-color:#1da88a;
+}
+
+/*<-------- Boton logOut -------->*/
+.btnLogOut{
+    position: fixed;
+    right: 2.5em;
+    color: #ffffff;
+    text-align: center;
+    background-color: #24cfaa;
+    font-weight: 700;
+    box-shadow: 5px 5px 15px #b1b1b1,
+                -5px -5px 15px #ffffff ;
+}
+
+.btnLogOut:hover{
+    background: #2fdbb6;
+}
+
+.btnLogOut:active{
+    background-color:#1da88a;
+}

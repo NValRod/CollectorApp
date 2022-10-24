@@ -9,9 +9,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { SearcherComponent } from './searcher/searcher.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
-import { BodyComponent } from './body/body.component';
-import { DashboardComponent } from './dashboard/dashboard.component' 
+import { NavbarComponent } from './navbar/navbar.component';
 
  
 
@@ -19,9 +17,7 @@ import { DashboardComponent } from './dashboard/dashboard.component'
   declarations: [
     HomeComponent,
     SearcherComponent,
-    SidenavComponent,
-    BodyComponent,
-    DashboardComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
