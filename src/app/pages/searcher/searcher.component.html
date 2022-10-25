@@ -1,0 +1,101 @@
+<main>  
+    <div class="mainCnt">
+        <!-- <input type="search" placeholder="Search Id / Cedula" class="inputSearch"> -->
+        <div>
+            <h1 class="title">Buscador de clientes</h1>
+              <div>
+                <input class="inputSearch" placeholder="Buscar cedula / ID">
+              </div>
+        </div>
+
+        <div>
+          <form action="submit" *ngFor="let item of dataSource">
+              <div class="inputCnt" >
+                <label for="cedula">Cedula / ID:</label>
+                <input class="inputSearch" type="text" value="{{item.id}}">
+
+              </div>
+              <div class="inputCnt">
+                <label for="cedula">Cartera:</label>
+                <input class="inputSearch" type="text" value="{{item.nameCompany}}">
+              </div>
+              <div class="inputCnt">
+                <label for="cedula">Nombres:</label>
+                <input class="inputSearch" type="text" value="{{item.name}}">
+              </div>
+              <div class="inputCnt">
+                <label for="cedula">Apellidos:</label>
+                <input class="inputSearch" type="text" value="{{item.lastname}}">
+              </div>
+              <div class="inputCnt">
+                <label for="cedula">Telefono:</label>
+                <input class="inputSearch" type="text" value="{{item.phoneNumber}}">
+              </div>
+              <div class="inputCnt">
+                <label for="cedula">Correo:</label>
+                <input class="inputSearch" type="text" value="{{item.email}}">
+              </div>
+              <div class="inputCnt">
+                <label for="cedula">Ultimo Pago:</label>
+                <input class="inputSearch" type="text" value="{{item.lastDatePay}}">
+              </div>
+              <div class="inputCnt">
+                <label for="cedula">Valor a la fecha:</label>
+                <input class="inputSearch" type="text" value="$ {{item.debt}}">
+              </div>
+          </form>
+
+            <div class="inputCnt inputTwoCtn">
+              <label for="cedula">Observaciones:</label>
+              <textarea class="inputSearch textarea"></textarea>
+              <button type="submit" class="btnGen">Modificar</button>
+            </div>
+        </div>   
+    </div>
+</main>
+
+
+
+<!-- <div class="tableCtn">
+  <table mat-table [dataSource]="dataSource" >
+    <ng-container matColumnDef="nameCompany">
+      <th mat-header-cell *matHeaderCellDef> Cartera</th>
+      <td mat-cell *matCellDef="let element"> {{element.nameCompany}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="cedula">
+      <th mat-header-cell *matHeaderCellDef> No. Cedula </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Nombre </th>
+      <td mat-cell *matCellDef="let element"> {{element.name | uppercase}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="phoneNumber">
+      <th mat-header-cell *matHeaderCellDef> No. Celular </th>
+      <td mat-cell *matCellDef="let element"> {{element.phoneNumber}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef> Email </th>
+      <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="debt">
+      <th mat-header-cell *matHeaderCellDef> Saldo</th>
+      <td mat-cell *matCellDef="let element"> {{element.debt}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="lastDatePay">
+      <th mat-header-cell *matHeaderCellDef> F. ultimo pago</th>
+      <td mat-cell *matCellDef="let element"> {{element.lastDatePay}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div> -->
+
+

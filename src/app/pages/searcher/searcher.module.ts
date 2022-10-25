@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
-import { FormModule } from '../../auth/form/form.module';
+import { FormModule } from '../auth/form/form.module';
 import { SearcherRoutingModule } from './sarcher-routing.module';
 
 

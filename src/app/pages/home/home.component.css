@@ -10,6 +10,19 @@
 
 .title{
     margin-top: -1em;
+    font-size: 2em;
 }
+
+.infoCtn{
+    width: 75em;
+    height: 20em;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.infoCtn h2{
+    font-size: 1.4em;
+}
+
 
 

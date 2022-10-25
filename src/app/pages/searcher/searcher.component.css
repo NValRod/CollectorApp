@@ -23,6 +23,37 @@ main{
     margin-top: -1em;
 }
 
+.inputCnt{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5em;
+}
+
+form label{
+    padding-bottom: 5px;
+    margin-left: 5px;
+}
+
+.inputTwoCtn{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.textarea{
+    padding-top: 10px;
+    height: 10em;
+    width: 40em;
+}
+
+.btnGen{
+    width: 9em;
+}
 mat-form-field{
     font-size: 1em;
     width: 25em;
@@ -70,11 +101,6 @@ mat-form-field.mat-form-field {
     font-weight: 500 !important;
 }
 
-
-.inputCnt input{
-    outline: none;
-    width: 20em;
-}
 
 .form-control:focus{
     box-shadow: none;

@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarModule } from './shared/navbar/navbar.module';
-import { SearcherModule } from './pages/home/searcher/searcher.module';
+import { SearcherModule } from './pages/searcher/searcher.module';
 
 
 
