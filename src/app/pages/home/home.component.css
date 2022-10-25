@@ -16,13 +16,19 @@
 .infoCtn{
     width: 75em;
     height: 20em;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px;
+    padding-left: 15px;
 }
 
 .infoCtn h2{
     font-size: 1.4em;
 }
 
+@media screen and (max-width: 1284px) {
+    .infoCtn{
+        width: 70em;
+    }
+} 
 
 
