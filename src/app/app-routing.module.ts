@@ -11,6 +11,8 @@ const routes: Routes = [
 { path: 'sign-up', loadChildren: () => import('./pages/auth/sign-up/sign-up.module').then(m => m.SignUpModule)}, 
 { path: 'sign-in', loadChildren: () => import('./pages/auth/sign-in/sign-in.module').then(m => m.SignInModule)},
 { path: 'messager', loadChildren: () => import('./pages/messages/messages.module').then(m => m.MessagesModule) },
+{ path: 'times', loadChildren: () => import('./pages/times/times.module').then(m => m.TimesModule) },
+{ path: 'config', loadChildren: () => import('./pages/config/config.module').then(m => m.ConfigModule) },
 { path: '**', redirectTo:'/sign-in', pathMatch:'full'},
 ]
 

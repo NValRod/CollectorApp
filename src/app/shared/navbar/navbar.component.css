@@ -2,7 +2,7 @@ nav{
     display: flex;
     position: absolute;
     gap: 1.5em;
-    padding: 1.5em;
+    padding: 1em 1.5em;
     margin-left: .5em;
     top: 0;
 }

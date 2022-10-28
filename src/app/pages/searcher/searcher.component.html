@@ -1,6 +1,5 @@
 <main>  
     <div class="mainCnt">
-        <!-- <input type="search" placeholder="Search Id / Cedula" class="inputSearch"> -->
         <div>
             <h1 class="title">Buscador de clientes</h1>
               <div>
@@ -45,9 +44,9 @@
               </div>
           </form>
 
-            <div class="inputCnt inputTwoCtn">
+            <div class="inputCnt inputTwoCtn" *ngFor="let item of dataSource">
               <label for="cedula">Observaciones:</label>
-              <textarea class="inputSearch textarea"></textarea>
+              <textarea class="inputSearch textarea" value="{{item.observations}}"></textarea>
               <button type="submit" class="btnGen">Modificar</button>
             </div>
         </div>   

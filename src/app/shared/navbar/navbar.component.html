@@ -3,8 +3,8 @@
         <button class="btnNav" [routerLink]="['/home']" >Home</button>
         <button class="btnNav" [routerLink]="['/searcher']">Buscador</button>
         <button class="btnNav" [routerLink]="['/messages']">Mensajes</button>
-        <button class="btnNav">Tiempo</button>
-        <button class="btnNav">Config</button>
+        <button class="btnNav" [routerLink]="['/times']">Tiempo</button>
+        <button class="btnNav" [routerLink]="['/config']">Config</button>
         <button class="btnLogOut" (click)="onLogOut()" [routerLink]="['/sign-in']" >log Out</button>
     </nav>
 </ng-container>
