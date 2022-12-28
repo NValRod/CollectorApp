@@ -1,12 +1,124 @@
 <ng-container *ngIf="(user$ | async)">
-    <nav>
-        <button class="btnNav" [routerLink]="['/home']" >Home</button>
-        <button class="btnNav" [routerLink]="['/searcher']">Buscador</button>
-        <button class="btnNav" [routerLink]="['/messages']">Mensajes</button>
-        <button class="btnNav" [routerLink]="['/times']">Tiempo</button>
-        <button class="btnNav" [routerLink]="['/config']">Config</button>
-        <button class="btnLogOut" (click)="onLogOut()" [routerLink]="['/sign-in']" >log Out</button>
+
+    <nav class="sidebar">
+        <header>    
+            <div class="image-text">    
+                <span class="image">
+                    <img src="assets/Img/Main-Logo.jpeg" alt="Main Logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">Collector App</span>
+                    <span class="profession">Asesor de cobranza</span>
+                </div>
+            </div>
+
+            <span (click)="toggleIn()">
+            <i class="material-icons toggle" style="cursor: pointer;">chevron_right</i>
+            </span>
+
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                        <i class="material-icons icon">search</i>
+                        <input type="search" placeholder="Search...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="home">
+                            <i class="material-icons icon">home</i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="searcher">
+                            <i class="material-icons icon">person_search</i>
+                            <span class="text nav-text">Buscador</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="messages">
+                            <i class="material-icons icon">chat</i>
+                            <span class="text nav-text">Mensajes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="times">
+                            <i class="material-icons icon">schedule</i>
+                            <span class="text nav-text">Horarios</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="config">
+                            <i class="material-icons icon">settings</i>
+                            <span class="text nav-text">Configuracion</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a (click)="onLogOut()" [routerLink]="['/sign-in']">
+                        <i class="material-icons icon">logout</i>
+                        <span class="text nav-text">Salir</span>
+                    </a>
+                </li>
+
+                <!-- <li class="mode">
+                    <div class="moon-sun">
+                        <i class="material-icons icon moon">dark_mode</i>
+                        <i class="material-icons icon sun">light_mode</i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch" >
+                        <span class="switch"></span>
+                    </div>
+                </li> -->
+            </div>
+        </div>
     </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </ng-container>
 
 
+
+
+<!-- <li><a (click)="onLogOut()" [routerLink]="['/sign-in']">Salir</a></li> -->

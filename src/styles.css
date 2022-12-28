@@ -5,18 +5,56 @@
     --softGray:#cbced1;
     --white:#ffffff;
     --waterGreen:#25c19f;
+
+
+    --body-color: #E4E9F7;
+    --sidebar-color:#fff;
+    --primary-color: #25c19f;
+    --primary-color-light: #F6F5FF;
+    --toggle-color:#DDD;
+    --text-color: #555; 
+
+    /* transition */
+
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
 }
 *{
     box-sizing: border-box;
 }
 
 body{
-    overflow: hidden;
+    height: 100vh;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     color: var(--darkGray);
     background-color: var(--softWhite);
 }
+
+body.dark{
+    --body-color: #23293b;
+    --sidebar-color:rgb(29, 28, 28);
+    --primary-color: #072e26;
+    --primary-color-light: #302f39;
+    --toggle-color:rgb(53, 52, 52);
+    --text-color: rgb(201, 195, 195); 
+}
+
+
+.left-ctn{
+    position: relative;
+    left: 288px;
+    height: 100%;
+    width: 70%;
+    padding: 1em;
+}
+
+ul{
+    padding-inline-start: 0;
+}
+
 
 /*<-------- logIn -------->*/
 .formCnt{

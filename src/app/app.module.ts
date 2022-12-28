@@ -11,6 +11,7 @@ import { SearcherModule } from './pages/searcher/searcher.module';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent

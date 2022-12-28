@@ -32,7 +32,7 @@ export class SearcherComponent implements OnInit {
   displayedColumns: string[] = ['nameCompany','cedula', 'name', 'phoneNumber', 'email','debt','lastDatePay'];
   dataSource = ELEMENT_DATA;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }
