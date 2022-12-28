@@ -4,7 +4,11 @@ main{
     justify-content: center;
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    margin-left: 17em;
+    margin-top: 3.5em;
 }
+
+
 
 .title{
     margin-top: -1em;
@@ -35,14 +39,18 @@ form label{
 .textarea{
     padding-top: 10px;
     height: 10em;
-    width: 40em;
+    width: 40em !important;
 }
 
 .btnGen{
     width: 9em;
 }
 
-@media screen and (max-width: 1284px) {
+
+.inputSearch{
+    width: 14em;
+}
+/* @media screen and (max-width: 1284px) {
     .inputSearch{
         width: 16.5em;
     }
@@ -50,7 +58,7 @@ form label{
     .textarea{
         width: 40em;
     }
-} 
+}  */
 
 /*<-------- Table -------->*/
 mat-form-field{

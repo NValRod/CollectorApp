@@ -45,9 +45,9 @@ body.dark{
 
 .left-ctn{
     position: relative;
-    left: 288px;
+    left: 17em;
     height: 100%;
-    width: 70%;
+    width: 100%;
     padding: 1em;
 }
 
